@@ -1,0 +1,470 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* ======================================== */
+/* Header Menu>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* ======================================== */
+.header_menu{
+    background-color: #e0e0e0;
+}
+.logo_menu img {
+	width: 90px;
+}
+.header_menu_item{
+    margin-left: 270px;
+}
+.header_menu_item li{
+    list-style: none;
+}
+.header_menu_item li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+    
+}
+.header_menu_item .home_border::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	left: 20px;
+	bottom: -21px;
+	background: #9484ed;
+    transition: all.5s;
+    visibility: hidden;
+}
+.header_menu_item .home_border:hover::after{
+    width: 75px;
+    visibility: visible;
+}
+.header_menu_item .home_border4::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	left: 20px;
+	bottom: -21px;
+	background: #9484ed;
+    transition: all.5s;
+    visibility: hidden;
+}
+.header_menu_item .home_border4:hover::after{
+    width: 55px;
+    visibility: visible;
+}
+.header_menu_item .home_border5::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 3px;
+	left: 20px;
+	bottom: -21px;
+	background: #9484ed;
+    transition: all.5s;
+    visibility: hidden;
+}
+.header_menu_item .home_border5:hover::after{
+    width: 40px;
+    visibility: visible;
+}
+
+li .home_box{
+    color: #2a2aca !important;
+}
+li .home_box::after {
+	content: "";
+	position: absolute;
+	width: 73px;
+	height: 3px;
+	left: 9px;
+	bottom: -21px;
+	background: #9484ed;
+	transition: all.5s;
+}
+
+.btn-primary{
+    position: relative;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 40px;
+    transition: all.5s;
+    background: #fff !important;
+    color: #0d6efd;
+    z-index: 1;
+    border: transparent;
+    
+    
+}
+.btn-primary2{
+    position: relative;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    transition: all.5s;
+    background: #0d6efd;
+    color: #fff;
+    z-index: 1;
+    border: transparent;
+}
+.btn-primary2:hover{
+    color: #0d6efd;
+    background: #fff;
+}
+button.btn-primary::before{ 
+    position: absolute;
+    content:"" ;
+    width:0 ;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #766ffc;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all.5s;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.btn-primary:hover::before{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    border: transparent;
+    
+    
+}
+/* Dropdren>>>>>>>>>>>>>>>>>>>>>>> */
+.header_menu_item li{
+    position: relative;
+}
+
+.header_menu_item li ul a {
+	position: absolute;
+	color: #fff;
+	background: blue;
+	height: 118px;
+	width: 224px;
+	border: 22px solid #fff;
+	z-index: 1;
+	display: inline-block;
+	line-height: 55px;
+	top: 54px;
+	left: 14px;
+    visibility: hidden;
+}
+.header_menu_item li:hover.header_menu_item li ul a{
+    visibility: visible;
+    z-index: 1;
+
+}
+
+
+/* ================================ */
+/* Banner Section >>>>>>>>>>>>>>>>*/
+/* ================================ */
+.banner_section{
+    height: 85vh;
+    background: #edf6ff;
+    position: relative;
+    overflow: hidden;
+}
+.banner_img img {
+	position: absolute;
+	border-radius: 50%;
+	right: -213px;
+	top: -223px;
+	height: 950px;
+	width: 1000px;
+}
+.banner_text h2 {
+	font-size: 47px;
+	font-weight: 600;
+	margin-top: 150px;
+	margin-bottom: 30px;
+}
+.banner_text p {
+	width: 86%;
+    margin-bottom: 30px;
+}
+/* ================================ */
+/* Servicr  Section >>>>>>>>>>>>>>>>*/
+/* ================================ */
+.service_section{
+    position: relative;
+}
+.service_item{
+    background: #f6f9fc;
+    
+}
+
+.bg_img_box {
+	position: absolute;
+	left: 88px;
+	bottom: 40px;
+	z-index: -1;
+}
+.service_text {
+	width: 46%;
+}
+.service_text h5 {
+	font-size: 20px;
+	color: #7379d3;
+    margin-bottom: 20px;
+    
+	
+}
+.service_text h2 {
+	font-weight: 600;
+	margin-bottom: 40px;
+    width: 104%;
+    position: relative;
+}
+.service_text h2::after {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 2px;
+	left: 4px;
+	bottom: -13px;
+	background: #766ffc;
+	transition: all.5s;
+}
+.service_text p{
+    line-height: 28px;
+}
+.service_item {
+	border-radius: 10px;
+	transition: all.5s;
+	box-shadow: 3px 1px 9px #ddd;
+}
+.service_item:hover {
+    background: #3763eb;
+}
+
+.service_item h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 20px;
+}
+.service_item:hover.service_item h3{
+    color: #fff;
+}
+.service_item span {
+	font-size: 20px;
+	background: #2a2aca;
+	height: 80px;
+	width: 80px;
+	color: #fff;
+	line-height: 80px;
+	text-align: center;
+    display: inline-block;
+    margin-bottom: 60px;
+    border-radius: 50% 50% 50% 0;
+    position: relative;
+    transition: all.5s;
+}
+.service_item:hover.service_item span{
+    color: #3763eb;
+    background: #fff;
+}
+.service_item span::before {
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 2px;
+	left: 0;
+	bottom: -35px;
+	background: #766ffc;
+    transition: all.5s;
+}
+.service_item:hover.service_item span::before{
+    background: #fff;
+    width: 60px;
+    height: 3px;
+}
+.service_item p{
+    color: #7b7a83;
+    font-weight: 500;
+    transition: all.5s;
+}
+.service_item:hover.service_item p{
+    color: #fff;
+}
+/* ================================ */
+/* Content Section >>>>>>>>>>>>>>>>*/
+/* ================================ */
+.content_section{
+    background: url(img/video-bg.jpg) no-repeat top center ;
+    padding: 250px;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.content_section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(9, 15, 22, 0.9);
+    z-index: -1;
+}
+.content_text h5 {
+	margin-bottom: 20px;
+}
+.content_text h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.content_text h2::after {
+	position: absolute;
+	content: "";
+	width: 66px;
+	height: 2px;
+	bottom: -25px;
+	left: 373px;
+	background: #fff;
+}
+.content_text p {
+	font-size: 16px;
+	font-weight: 500;
+}
+/* play btn >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.icon_box{
+    margin: auto;
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    position: relative;
+}
+.icon_box span{
+    font-size: 20px;
+    color: #2a2aca;
+    margin-top: 50px;
+}
+.content_section .icon_box::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid#fff;
+    border-radius: 50%;
+    -webkit-animation: playbtn 2s ease-out infinite;
+            animation: playbtn 2s ease-out infinite;
+
+}
+.content_section .icon_box::after{
+    content: "";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid#fff;
+    border-radius: 50%;
+    -webkit-animation: playbtn1 2s ease-out infinite;
+            animation: playbtn1 2s ease-out infinite;
+
+}
+
+
+@-webkit-keyframes playbtn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.3);
+        opacity: .4;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 1.5;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+@keyframes playbtn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.3);
+        opacity: .4;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 1.5;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes playbtn1{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.3);
+        opacity: .4;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 1.5;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes playbtn1{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.3);
+        opacity: .4;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 1.5;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
