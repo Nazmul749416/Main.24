@@ -143,32 +143,31 @@ button.btn-primary::before{
     
 }
 /* Dropdren>>>>>>>>>>>>>>>>>>>>>>> */
-.header_menu_item li{
+ul.header_menu_item li{
     position: relative;
 }
 
-.header_menu_item li ul a {
+ul.header_menu_item li ul.drop_ul {
 	position: absolute;
-	color: #fff;
-	background: blue;
-	height: 118px;
-	width: 224px;
+	top: 270%;
+	left: 15px;
+	width: 270px;
+	background-color: blue !important;
+	list-style: none;
 	border: 22px solid #fff;
-	display: inline-block;
-	line-height: 55px;
-	top: 54px;
-	left: 14px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all.5s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+	padding: 23px !important;
+    transition: all.5s;
 }
-.header_menu_item li:hover.header_menu_item li ul a{
-    visibility: visible;
+ul.header_menu_item li ul.drop_ul li.drop_li a.drop_link{
+    color: #fff;
+}
+ul.header_menu_item li:hover ul.drop_ul{
+    top: 213%;
     opacity: 1;
-
+    visibility: visible;
 }
-
-
 /* ================================ */
 /* Banner Section >>>>>>>>>>>>>>>>*/
 /* ================================ */
@@ -476,4 +475,5 @@ button.btn-primary::before{
         transform: scale(2);
         opacity: 0;
     }
+}
 }
