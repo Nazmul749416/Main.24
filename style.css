@@ -149,7 +149,7 @@ ul.header_menu_item li{
 
 ul.header_menu_item li ul.drop_ul {
 	position: absolute;
-	top: 270%;
+	top: 214%;
 	left: 15px;
 	width: 270px;
 	background-color: blue !important;
@@ -158,13 +158,12 @@ ul.header_menu_item li ul.drop_ul {
 	opacity: 0;
 	visibility: hidden;
 	padding: 23px !important;
-    transition: all.5s;
+    transition: all.6s ease-in-out;
 }
 ul.header_menu_item li ul.drop_ul li.drop_li a.drop_link{
     color: #fff;
 }
 ul.header_menu_item li:hover ul.drop_ul{
-    top: 213%;
     opacity: 1;
     visibility: visible;
 }
