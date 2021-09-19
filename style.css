@@ -154,16 +154,17 @@ button.btn-primary::before{
 	height: 118px;
 	width: 224px;
 	border: 22px solid #fff;
-	z-index: 1;
 	display: inline-block;
 	line-height: 55px;
 	top: 54px;
 	left: 14px;
     visibility: hidden;
+    opacity: 0;
+    transition: all.5s ease-in-out;
 }
 .header_menu_item li:hover.header_menu_item li ul a{
     visibility: visible;
-    z-index: 1;
+    opacity: 1;
 
 }
 
@@ -352,11 +353,19 @@ button.btn-primary::before{
     border-radius: 50%;
     line-height: 80px;
     position: relative;
+    transition: all.5s;
+}
+.icon_box:hover{
+    background: #2a2aca;
 }
 .icon_box span{
     font-size: 20px;
     color: #2a2aca;
     margin-top: 50px;
+    transition: all.5s;
+}
+.icon_box:hover.icon_box span{
+    color: #fff;
 }
 .content_section .icon_box::before{
     content: "";
