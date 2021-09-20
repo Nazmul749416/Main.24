@@ -1,9 +1,11 @@
 body{
     font-family: 'Spartan', sans-serif;
+    overflow-x: hidden;
 }
 img{
     max-width: 100%;
 }
+
 /* ======================================== */
 /* Header Menu>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* ======================================== */
@@ -474,5 +476,4 @@ ul.header_menu_item li:hover ul.drop_ul{
         transform: scale(2);
         opacity: 0;
     }
-}
 }
